@@ -1,0 +1,279 @@
+var _0x498e47 = _0x4afc;
+function _0x2bb8() {
+  var _0x4adb36 = [
+    "Arcade",
+    "3nBCnib",
+    "isTouchingRight",
+    "bounce",
+    "dead_",
+    "offset",
+    "game",
+    "setTexture",
+    "setVelocityY",
+    "physics",
+    "resetSpeed",
+    "dead",
+    "jumpYLimit",
+    "right",
+    "body",
+    "673448EoewZb",
+    "move",
+    "increasingSpeed",
+    "startJump",
+    "changeSkin",
+    "4977352vtogia",
+    "play",
+    "Physics",
+    "player_",
+    "9072280RPPnmR",
+    "set",
+    "isPreparing",
+    "27pjNRRl",
+    "jump_",
+    "canJump",
+    "width",
+    "hurt",
+    "increaseSpeed",
+    "235MSHNBc",
+    "tweens",
+    "down",
+    "scene",
+    "preparing_",
+    "2210CqHzcj",
+    "calculateJumpXDistance",
+    "anims",
+    "setVelocityX",
+    "711487vghoUQ",
+    "resetPreparing",
+    "jumpYIncrease",
+    "234157PHpOeS",
+    "isIdle",
+    "idle_",
+    "startEntryGameAim",
+    "jump",
+    "touching",
+    "jumpX",
+    "2118254rNzZAD",
+    "setOrigin",
+    "114312kwteuN",
+    "add",
+    "interval",
+    "audio",
+    "isReady",
+    "hurt_",
+    "isFellOffMap",
+    "moveRight_",
+    "spriteID",
+    "initialJumpValue",
+    "preparing",
+    "endJump",
+    "key",
+    "jumpY",
+    "isFalling",
+    "isTouchingDown",
+  ];
+  _0x2bb8 = function () {
+    return _0x4adb36;
+  };
+  return _0x2bb8();
+}
+(function (_0x237dd6, _0x1bb058) {
+  var _0x14e690 = _0x4afc,
+    _0x98517c = _0x237dd6();
+  while (!![]) {
+    try {
+      var _0x51e42d =
+        parseInt(_0x14e690(0xab)) / 0x1 +
+        (-parseInt(_0x14e690(0xb5)) / 0x2) *
+          (-parseInt(_0x14e690(0xc8)) / 0x3) +
+        parseInt(_0x14e690(0x95)) / 0x4 +
+        (-parseInt(_0x14e690(0xa2)) / 0x5) *
+          (-parseInt(_0x14e690(0xb7)) / 0x6) +
+        parseInt(_0x14e690(0x99)) / 0x7 +
+        (parseInt(_0x14e690(0xd6)) / 0x8) * (parseInt(_0x14e690(0x9c)) / 0x9) +
+        (parseInt(_0x14e690(0xa7)) / 0xa) * (-parseInt(_0x14e690(0xae)) / 0xb);
+      if (_0x51e42d === _0x1bb058) break;
+      else _0x98517c["push"](_0x98517c["shift"]());
+    } catch (_0xd6a2d7) {
+      _0x98517c["push"](_0x98517c["shift"]());
+    }
+  }
+})(_0x2bb8, 0xb8378);
+function _0x4afc(_0x2a42a2, _0x68a4b6) {
+  var _0x2bb8d2 = _0x2bb8();
+  return (
+    (_0x4afc = function (_0x4afc3a, _0x19e798) {
+      _0x4afc3a = _0x4afc3a - 0x95;
+      var _0x46be37 = _0x2bb8d2[_0x4afc3a];
+      return _0x46be37;
+    }),
+    _0x4afc(_0x2a42a2, _0x68a4b6)
+  );
+}
+class Player extends Phaser[_0x498e47(0x97)][_0x498e47(0xc7)]["Sprite"] {
+  constructor(_0x3d5bd9, _0x4a11bb, _0x1e3bb4, _0x32443d, _0x58ceb0) {
+    var _0x16f53a = _0x498e47;
+    super(_0x3d5bd9, _0x4a11bb, _0x1e3bb4, _0x32443d),
+      (this[_0x16f53a(0xa5)] = _0x3d5bd9),
+      (this["x"] = _0x4a11bb),
+      (this["y"] = _0x1e3bb4),
+      (this["sprite"] = _0x32443d),
+      (this[_0x16f53a(0xbf)] = _0x58ceb0),
+      (this[_0x16f53a(0xba)] =
+        this[_0x16f53a(0xa5)][_0x16f53a(0xcd)][_0x16f53a(0xba)]),
+      (this[_0x16f53a(0xc0)] = 0x64),
+      (this[_0x16f53a(0xc4)] = this[_0x16f53a(0xc0)]),
+      (this[_0x16f53a(0xd3)] = 0x5dc),
+      (this["jumpYIncrease"] = 0x8c),
+      (this[_0x16f53a(0xb4)] = this[_0x16f53a(0xa8)]()),
+      (this[_0x16f53a(0xbb)] = ![]),
+      (this[_0x16f53a(0x9e)] = ![]),
+      (this[_0x16f53a(0xaf)] = !![]),
+      (this[_0x16f53a(0x9b)] = ![]),
+      (this[_0x16f53a(0xc5)] = ![]),
+      this[_0x16f53a(0xb6)](0x0, 0x1),
+      this[_0x16f53a(0xa5)]["add"]["existing"](this),
+      this[_0x16f53a(0xa5)][_0x16f53a(0xd0)]["world"]["enableBody"](this),
+      (this["body"][_0x16f53a(0x9f)] = 0x41),
+      (this[_0x16f53a(0xd5)][_0x16f53a(0xcc)]["x"] = 0xa),
+      this[_0x16f53a(0xd5)]["acceleration"][_0x16f53a(0x9a)](0x0, 0x7d0),
+      (this["body"][_0x16f53a(0xca)]["x"] = 0.5);
+  }
+  [_0x498e47(0xc1)]() {
+    var _0x37ebd8 = _0x498e47;
+    if (!this["canJump"]) return;
+    (this[_0x37ebd8(0xaf)] = ![]),
+      this[_0x37ebd8(0xa9)][_0x37ebd8(0x96)](
+        _0x37ebd8(0xa6) + this[_0x37ebd8(0xbf)],
+        !![]
+      ),
+      (this[_0x37ebd8(0x9b)] = !![]),
+      this[_0x37ebd8(0xd8)]();
+  }
+  ["increasingSpeed"]() {
+    this["interval"] = setInterval(() => {
+      var _0x53722b = _0x4afc;
+      this[_0x53722b(0xa1)]();
+    }, 0x64);
+  }
+  [_0x498e47(0xa8)]() {
+    var _0x564e7c = _0x498e47;
+    return this[_0x564e7c(0xc4)] / 0x2;
+  }
+  [_0x498e47(0xd2)]() {
+    var _0x2df514 = _0x498e47;
+    this[_0x2df514(0xba)][_0x2df514(0xc2)][_0x2df514(0x96)](),
+      this[_0x2df514(0xa9)][_0x2df514(0x96)](
+        _0x2df514(0xcb) + this["spriteID"],
+        !![]
+      ),
+      (this[_0x2df514(0xd5)][_0x2df514(0xca)]["x"] = 0x0),
+      this[_0x2df514(0xaa)](0x0);
+  }
+  [_0x498e47(0xb2)]() {
+    var _0x2fcad6 = _0x498e47;
+    if (!this[_0x2fcad6(0x9e)]) return;
+    this[_0x2fcad6(0xba)][_0x2fcad6(0xd9)][_0x2fcad6(0x96)](),
+      this[_0x2fcad6(0xa9)][_0x2fcad6(0x96)](
+        _0x2fcad6(0x9d) + this["spriteID"],
+        !![]
+      ),
+      (this[_0x2fcad6(0xb4)] = this[_0x2fcad6(0xa8)]()),
+      (this[_0x2fcad6(0x9b)] = ![]),
+      (this[_0x2fcad6(0xaf)] = ![]),
+      (this[_0x2fcad6(0x9e)] = ![]),
+      this[_0x2fcad6(0xcf)](-this[_0x2fcad6(0xc4)]),
+      this[_0x2fcad6(0xaa)](this[_0x2fcad6(0xb4)]),
+      this[_0x2fcad6(0xac)]();
+  }
+  [_0x498e47(0xac)]() {
+    var _0x40ae64 = _0x498e47;
+    clearInterval(this[_0x40ae64(0xb9)]), this[_0x40ae64(0xd1)]();
+  }
+  [_0x498e47(0xc6)]() {
+    var _0x1fbd49 = _0x498e47;
+    return this[_0x1fbd49(0xd5)][_0x1fbd49(0xb3)][_0x1fbd49(0xa4)];
+  }
+  [_0x498e47(0xc9)]() {
+    var _0x751075 = _0x498e47;
+    return this[_0x751075(0xd5)][_0x751075(0xb3)][_0x751075(0xd4)];
+  }
+  ["bounce"]() {
+    var _0x281e92 = _0x498e47;
+    this[_0x281e92(0xba)][_0x281e92(0xa0)][_0x281e92(0x96)](),
+      this[_0x281e92(0xa9)]["play"](_0x281e92(0xbc) + this["spriteID"], !![]);
+  }
+  ["idle"]() {
+    var _0x5891c9 = _0x498e47;
+    if (this[_0x5891c9(0x9b)] || this[_0x5891c9(0xaf)]) return;
+    this["anims"][_0x5891c9(0x96)](_0x5891c9(0xb0) + this["spriteID"], !![]),
+      this[_0x5891c9(0xba)]["endJump"][_0x5891c9(0x96)](),
+      (this[_0x5891c9(0xc5)] = ![]),
+      (this[_0x5891c9(0xaf)] = !![]),
+      (this["canJump"] = !![]),
+      this[_0x5891c9(0xaa)](0x0);
+  }
+  ["isFallingDown"]() {
+    return this["body"]["velocity"]["y"] > 0x0;
+  }
+  ["fall"]() {
+    var _0x51a8c0 = _0x498e47;
+    if (
+      this[_0x51a8c0(0xa9)]["currentAnim"][_0x51a8c0(0xc3)] ===
+        _0x51a8c0(0xbc) + this[_0x51a8c0(0xbf)] ||
+      this[_0x51a8c0(0xc5)]
+    )
+      return;
+    (this["isFalling"] = !![]),
+      this[_0x51a8c0(0xa9)][_0x51a8c0(0x96)](
+        "fall_" + this[_0x51a8c0(0xbf)],
+        !![]
+      );
+  }
+  [_0x498e47(0xbd)](_0x5bd5ff) {
+    return this["y"] >= _0x5bd5ff + 0xc8;
+  }
+  [_0x498e47(0xb1)](_0xd9637c) {
+    var _0x216813 = _0x498e47;
+    this[_0x216813(0xa9)]["play"](
+      _0x216813(0xbe) + this[_0x216813(0xbf)],
+      !![]
+    ),
+      this[_0x216813(0xa5)][_0x216813(0xa3)][_0x216813(0xb8)]({
+        targets: this,
+        duration: 0x3e8,
+        x: this["x"] + 0x8c,
+        onComplete: () => {
+          var _0x5c3d54 = _0x216813;
+          this[_0x5c3d54(0xa9)][_0x5c3d54(0x96)](
+            "idle_" + this[_0x5c3d54(0xbf)],
+            !![]
+          ),
+            (this[_0x5c3d54(0xbb)] = !![]),
+            (this[_0x5c3d54(0x9e)] = !![]),
+            _0xd9637c();
+        },
+      });
+  }
+  [_0x498e47(0xa1)]() {
+    var _0x2b37a8 = _0x498e47;
+    if (this[_0x2b37a8(0xc4)] >= this[_0x2b37a8(0xd3)]) return;
+    this[_0x2b37a8(0xc4)] += this[_0x2b37a8(0xad)];
+  }
+  [_0x498e47(0xd1)]() {
+    var _0x2f4175 = _0x498e47;
+    (this[_0x2f4175(0xc4)] = this[_0x2f4175(0xc0)]),
+      (this[_0x2f4175(0xb4)] = this["calculateJumpXDistance"]());
+  }
+  [_0x498e47(0xd7)](_0x3deac0) {
+    this["x"] += _0x3deac0;
+  }
+  ["getPosition"]() {
+    return this["x"] + this["width"];
+  }
+  [_0x498e47(0xda)](_0x48e5ca) {
+    var _0x51c83d = _0x498e47;
+    (this[_0x51c83d(0xbf)] = _0x48e5ca),
+      this[_0x51c83d(0xce)](_0x51c83d(0x98) + _0x48e5ca);
+  }
+}
